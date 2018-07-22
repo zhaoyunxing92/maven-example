@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.sunny.maven</groupId>
+        <artifactId>maven-example</artifactId>
+        <version>1.2-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>maven-core</artifactId>
+    <packaging>jar</packaging>
+    <description>核心模块</description>
+    <name>maven-core</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.sunny.maven</groupId>
+            <artifactId>maven-common</artifactId>
+            <version>1.2-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+</project>
