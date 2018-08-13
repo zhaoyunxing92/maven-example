@@ -33,15 +33,16 @@
                 <version>${log4j.version}</version>
             </dependency>
         </dependencies>
+
     </dependencyManagement>
 
     <!--父模块导入的包子模块都会继承-->
     <dependencies>
         <!--<dependency>-->
-            <!--<groupId>junit</groupId>-->
-            <!--<artifactId>junit</artifactId>-->
-            <!--<version>${junit.version}</version>-->
-            <!--<scope>test</scope>-->
+        <!--<groupId>junit</groupId>-->
+        <!--<artifactId>junit</artifactId>-->
+        <!--<version>${junit.version}</version>-->
+        <!--<scope>test</scope>-->
         <!--</dependency>-->
     </dependencies>
 
@@ -49,21 +50,31 @@
         <module>maven-common</module>
         <module>maven-core</module>
         <module>maven-api</module>
+        <module>maven-user</module>
     </modules>
+
+<!--    <repositories>
+        <repository>
+            <id>nexus-osc</id>
+            <url>http://maven.oschina.net/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>-->
 
     <build>
         <plugins>
-            <!--发布代码Jar插件-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
-
             </plugin>
-            <!--发布源码插件-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -75,6 +86,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
