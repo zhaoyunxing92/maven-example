@@ -11,5 +11,12 @@
 
     <artifactId>order-model</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.sunny.maven</groupId>
+            <artifactId>user-model</artifactId>
+            <!--是否往下传递 默认false-->
+            <optional>false</optional>
+        </dependency>
+    </dependencies>
 </project>

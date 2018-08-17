@@ -23,10 +23,16 @@ public class User {
      */
     private int sex;
 
-    public User(String userName, String password) {
+//    public User(String userName, String password) {
+//        this.userName = userName;
+//        this.password = password;
+//        this.sex = 0;
+//    }
+
+    public User(String userName, String password, int sex) {
         this.userName = userName;
         this.password = password;
-        this.sex = 0;
+        this.sex = sex;
     }
 
     public String getUserName() {
@@ -55,7 +61,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "{" +
                 "userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 ", sex=" + sex +

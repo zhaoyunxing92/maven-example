@@ -10,6 +10,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>maven-model</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>user-model</module>
+        <module>order-model</module>
+    </modules>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.sunny.maven</groupId>
+                <artifactId>user-model</artifactId>
+                <version>${parent.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

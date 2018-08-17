@@ -1,5 +1,5 @@
-# Log file
-*.log
 /.idea/
 *.iml
 /**/target/
+# Log file
+/**/logs/

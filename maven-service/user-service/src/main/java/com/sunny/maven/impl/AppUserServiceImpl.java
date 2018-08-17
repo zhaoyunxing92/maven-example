@@ -21,6 +21,6 @@ public class AppUserServiceImpl implements AppUserService {
      * @return
      */
     public User login(String userName, String password) {
-        return new User(userName, password);
+        return new User(userName, password,0);
     }
 }
