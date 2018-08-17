@@ -4,6 +4,7 @@
 package com.sunny.maven.impl;
 
 import com.sunny.maven.AppUserService;
+import com.sunny.maven.User;
 
 /**
  * @author zhaoyunxing92
@@ -12,8 +13,14 @@ import com.sunny.maven.AppUserService;
  * @des:
  */
 public class AppUserServiceImpl implements AppUserService {
-
-    public void login(String userName, String password) {
-        
+    /**
+     * 登录
+     *
+     * @param userName 用户名
+     * @param password 密码
+     * @return
+     */
+    public User login(String userName, String password) {
+        return new User(userName, password);
     }
 }
