@@ -58,7 +58,7 @@ public class Order {
         return "Order{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
-                ", user=" + user +
+                ", user=" + user.toString() +
                 '}';
     }
 }
