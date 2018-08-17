@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sunny.maven</groupId>
-    <artifactId>maven-example</artifactId>
+    <artifactId>maven-parent</artifactId>
     <version>1.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -33,7 +33,6 @@
                 <version>${log4j.version}</version>
             </dependency>
         </dependencies>
-
     </dependencyManagement>
 
     <!--父模块导入的包子模块都会继承-->
@@ -47,24 +46,10 @@
     </dependencies>
 
     <modules>
-        <module>maven-common</module>
-        <module>maven-core</module>
         <module>maven-api</module>
-        <module>maven-user</module>
+        <module>maven-core</module>
     </modules>
 
-<!--    <repositories>
-        <repository>
-            <id>nexus-osc</id>
-            <url>http://maven.oschina.net/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>-->
 
     <build>
         <plugins>

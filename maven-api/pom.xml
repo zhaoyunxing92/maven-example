@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>maven-example</artifactId>
+        <artifactId>maven-parent</artifactId>
         <groupId>com.sunny.maven</groupId>
         <version>1.2-SNAPSHOT</version>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>maven-api</artifactId>
-
-    <name>maven-api</name>
-    <description>web api 模块</description>
-    <url>http://www.myorganization.org</url>
-
-    <packaging>war</packaging>
-
-
+    <description>web api</description>
+    <modules>
+        <module>user-api</module>
+        <module>auth-api</module>
+        <module>order-api</module>
+    </modules>
+    <packaging>pom</packaging>
 
 </project>
